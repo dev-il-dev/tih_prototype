@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset=UTF-8>
+<meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+<meta name = "description" content = "Learning about Meta Tags." />
+<meta http-equiv = "cookie" content = "userid = xyz;
+expires = Tuesday, 31-Dec-19 23:59:59 IST;" />
+<meta name = "revised" content = "EDUCBA -Online courses, 3/7/2019" />
+<meta http-equiv = "refresh" content = "2" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H-LOCK-firebase</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+<script src='https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js'></script>
+
+</head>
+<style>
+    body{background-color: white;
+    color: black;
+    height: 100%;
+        overflow: hidden;}
+    .h2{
+        text-align: center;
+    }
+</style>
+<body>   
+<center><h2> AUTOMATIC TESTER FOR SOFTWARE-FIREBASE</h2></center>
+
+    <center><h2> Sendata = <span id="sdd"></span></h5></center>
+ 
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyB-_nCDYoIrJCroQkgwoF-bx5lwpMDbt74",
+          authDomain: "tih-iot.firebaseapp.com",
+          databaseURL: "https://tih-iot-default-rtdb.firebaseio.com",
+          projectId: "tih-iot",
+          storageBucket: "tih-iot.appspot.com",
+          messagingSenderId: "849147800786",
+          appId: "1:849147800786:web:342e8993f2c00a227a110b",
+          measurementId: "G-KB9YT4PRC6"
+        };
+      
+        // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const db= firebase.database().ref("sendata");
+
+
+     db.once("value", function(snapshot)
+     {
+        var s= snapshot.val();
+        document.getElementById("sdd").innerHTML = s;
+        localStorage.setItem("val",s);
+        localStorage.setItem("thr",530);
+     })
+</script>    
+</body>
+

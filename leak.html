@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset=UTF-8>
+<meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+<meta name = "description" content = "Learning about Meta Tags." />
+<meta http-equiv = "cookie" content = "userid = xyz;
+expires = Tuesday, 31-Dec-19 23:59:59 IST;" />
+<meta name = "revised" content = "EDUCBA -Online courses, 3/7/2019" />
+<meta http-equiv = "refresh" content = "1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H-LOCK-LEAK</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{background-color: white;
+    color: black;
+    height: 100%;
+        overflow: hidden;}
+    .h2{
+        text-align: center;
+    }
+</style>
+<body>
+<center> <a href="Noleak.html">  <img src="cross.png" style="width: 100px;  margin-top: 280px;"></a></center> 
+    <h2 style="text-align:center;">Leak Detected</h2>
+    <h4 style="text-align:center;">Leak Source: Pipe Segment 1</h4>
+    <h4 style="text-align:center;"> Hydrogenn Concentration (ppm) <span id="sdd"></span></h4>
+    <div style="position:absolute; bottom:0; width:100%; text-align:center;">
+        <a href="index.html" style="color: rgb(0, 0, 0);"> <h5>TIH-IoT</h5> </a>
+        <p>Hydrogen Leak Observation and Control Kit</p>
+    </div>
+</body>
+
+<script>
+    function sys(v,t){
+        if(parseInt(v,10)<parseInt(t,10)){
+    window.location = href = "Noleak.html";}}
+
+    window.onload = function () {
+        var t = localStorage.getItem("thr");
+            var v= localStorage.getItem("val");
+        sys(v, t);
+        document.getElementById("sdd").innerHTML = v;
+    };
+</script>
